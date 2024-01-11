@@ -1,0 +1,70 @@
+.page__body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.stop-watch {
+  border: 5px dotted #000;
+  border-radius: 50%;
+  width: 80vmin;
+  height: 80vmin;
+  position: relative;
+}
+
+.stop-watch__circle {
+  z-index: 1;
+  background-color: #ff0;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 47%;
+  left: 48%;
+}
+
+.stop-watch__hand {
+  transform-origin: 50% 100%;
+  position: absolute;
+}
+
+.stop-watch__hand--minute {
+  background-color: red;
+  width: 4px;
+  height: 50%;
+  animation: 60s linear infinite rotate-minute;
+  left: 50%;
+}
+
+.stop-watch__hand--second {
+  background-color: green;
+  width: 6px;
+  height: 30%;
+  animation: 5s linear infinite rotate-second;
+  top: 20%;
+  left: 50%;
+}
+
+@keyframes rotate-second {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-minute {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
